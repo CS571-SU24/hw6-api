@@ -88,7 +88,7 @@ If a chatroom is specified that does not exist, a `404` will be returned.
 ### Registering a User
 `POST` `https://cs571api.cs.wisc.edu/rest/su24/hw6/register`
 
-You must register a user with a specified `username` and `pin`. Only the pin is case-sensitive.
+You must register a user with a specified `username` and 7-digit `pin`.
 
 Requests must include credentials as well as a header `Content-Type: application/json`.
 
@@ -153,7 +153,7 @@ If the `username` is longer than 64 characters or if the `pin` is longer than 12
 
 `POST` `https://cs571api.cs.wisc.edu/rest/su24/hw6/login`
 
-You must log a user in with their specified `username` and `pin`. Only the pin is case-sensitive.
+You must log a user in with their specified `username` and 7-digit `pin`.
 
 Requests must include credentials as well as a header `Content-Type: application/json`.
 
